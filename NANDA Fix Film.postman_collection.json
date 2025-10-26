@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "d5ee0ec5-794f-4c90-832b-6f6ed7b7a83e",
+		"name": "NANDA FIX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48949278",
+		"_collection_link": "https://dharmananda256-5272474.postman.co/workspace/Dharma-Nanda's-Workspace~8ff1f84b-1fbe-413c-841e-c264f832c295/collection/48949278-d5ee0ec5-794f-4c90-832b-6f6ed7b7a83e?action=share&source=collection_link&creator=48949278"
+	},
+	"item": [
+		{
+			"name": "Tambah Film",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Spongebob Square\",\r\n    \"tahunRilis\" : \"1996\",\r\n    \"sutradara\" : \"Hillenburg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lihat Film",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Film",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Spongebob Square Update\",\r\n    \"tahunRilis\" : \"2027\",\r\n    \"sutradara\" : \"Hillenburg Nick\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fddfb49e95e7cde8ec534e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fddfb49e95e7cde8ec534e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus Film",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fddfb49e95e7cde8ec534e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fddfb49e95e7cde8ec534e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
